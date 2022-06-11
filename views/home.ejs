@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=titulo%></title>
+        <meta content="utf-8">
+        <link rel="stylesheet" href="/css/general.css">
+    </head>
+    <body>
+
+        <div class="flex-container">
+
+            <% for( let i = 0; i < personajes.length; i++ ){ %>
+
+                <div class="personaje">
+                    
+                    <img class="image" src="<%=personajes[i].image%>" alt="">
+                    <div class="name"><%=personajes[i].name%></div>
+                    <div class="species"><%=personajes[i].species%></div>
+                    <div class="gender"><%=personajes[i].gender%></div>
+
+                </div>
+
+            <% } %>
+
+        </div>
+
+    </body>
+</html>
